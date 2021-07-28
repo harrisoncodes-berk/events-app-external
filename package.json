@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "set SERVER=http://localhost:8082&& node server.js",
-    "test": "set SERVER=http://localhost:8082&& nyc mocha"
+    "test": "set SERVER=http://localhost:8082&& nyc mocha --exit"
   },
   "keywords": [],
   "author": "",

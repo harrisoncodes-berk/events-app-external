@@ -9,24 +9,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
   <div>
       <h1 class='text-success fs-1 text'>Welcome to Team Natural's application</h1>
-      <p> Scott Espinosa </p>
-      <p> Taraj Shah </p>
-      <p> Harry deBoer </p>
-      <p> Joey Weiss </p>
-      <p> Brittany J </p>
+      <ul class="list-group">
+        <li class="list-group-item">Harry deBoer</li>
+        <li class="list-group-item">Scott Espinosa</li>
+        <li class="list-group-item">Brittany Javalera</li>
+        <li class="list-group-item">Taraj Shah</li>
+        <li class="list-group-item">Joey Weiss</li>
+      </ul>
     {{{body}}}
 </div>
 <div>
   <h2>Add an event</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Title">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" rows="2" placeholder="Description"></textarea>
+    </div>
+        <input type="submit" name="submit" value="submit" class="btn btn-primary"/>
     </form>
   </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
